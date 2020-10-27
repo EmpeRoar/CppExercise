@@ -10,6 +10,18 @@ int main()
     cout << "Hello World!\n";
     cout << "Nice Cpp Jul!\n";
 
+
+    int age = 25;
+    age = 26;
+    float weight = 65.5;
+    double balance = 123456.7;
+    char gender = 'f';
+    string username = "CodeBeauty";
+    bool isTodaySunny = false;
+    string colors[10] = {};
+
+    string colors[10] = {};
+
     system("pause>0");
 }
 
