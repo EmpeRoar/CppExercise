@@ -23,6 +23,20 @@ int main()
 
     cout << names[0];
 
+    cin >> colors[0];
+
+    bool isTodaySunny = false;
+    bool isTodayWeekend = false;
+
+    if (isTodayWeekend && isTodaySunny) {
+        cout << "Go to park" << endl;
+    }
+    else {
+        cout << "Go to Work" << endl;
+    }
+
+
+
     system("pause>0");
 }
 
