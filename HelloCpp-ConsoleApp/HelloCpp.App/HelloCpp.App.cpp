@@ -19,7 +19,9 @@ int main()
     string username = "CodeBeauty";
     bool isTodaySunny = false;
     string colors[10] = {};
-    string colors[] = {"Vlad", "Faith", "Julius"};
+    string names[] = {"Vlad", "Faith", "Julius"};
+
+    cout << names[0];
 
     system("pause>0");
 }
