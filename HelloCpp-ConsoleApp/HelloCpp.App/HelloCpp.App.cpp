@@ -19,8 +19,7 @@ int main()
     string username = "CodeBeauty";
     bool isTodaySunny = false;
     string colors[10] = {};
-
-    string colors[10] = {};
+    string colors[] = {"Vlad", "Faith", "Julius"};
 
     system("pause>0");
 }
