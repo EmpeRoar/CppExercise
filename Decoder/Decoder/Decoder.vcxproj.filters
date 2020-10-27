@@ -19,4 +19,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\Aquip\EWS\300434064523500002585_420875503.sbd">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
 </Project>

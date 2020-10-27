@@ -141,6 +141,9 @@
   <ItemGroup>
     <ClCompile Include="Decoder.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\Aquip\EWS\300434064523500002585_420875503.sbd" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
