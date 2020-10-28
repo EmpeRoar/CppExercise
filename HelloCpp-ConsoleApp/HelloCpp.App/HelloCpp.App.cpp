@@ -107,27 +107,32 @@ void Test()
     cin >> colors[0];
 
     /*
-        bool isTodaySunny = false;
-        bool isTodayWeekend = false;
+      bool isTodaySunny = false;
+      bool isTodayWeekend = false;
 
-        if (isTodayWeekend && isTodaySunny) {
-            cout << "Go to park" << endl;
-        }
-        else {
-            cout << "Go to Work" << endl;
-        }
+      if (isTodayWeekend && isTodaySunny) {
+         cout << "Go to park" << endl;
+      }
+      else {
+         cout << "Go to Work" << endl;
+      }
     */
-
-
 }
 
 
 void PointerTest()
 {
     // int a = 5;
-    // point b = &a; -->get the address of variable...
+    // point *b = &a; --> declar a pointer.. pointer to address of a.
     // int c = *b;   --> get value at...
     cout << "32 BIT: Pointers! \n";
+
+    int a = 5;
+    int* b = &a;
+    int c = *b;
+
+    cout << c;
+    cout << "\n";
 }
 
 int main()
