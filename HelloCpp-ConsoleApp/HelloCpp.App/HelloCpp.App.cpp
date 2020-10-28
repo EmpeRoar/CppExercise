@@ -23,7 +23,7 @@ void WriteToFile()
 
 void ReadFile()
 {
-    const char* fileName = "300434064523500002585_420875503.sbd";
+    const char* fileName = "300234066488350_034352.sbd";
     FILE* stream;
 
     errno_t err;
@@ -43,24 +43,16 @@ void ReadFile()
     fseek(stream, 0L, SEEK_END);
     fileSize = ftell(stream);
     rewind(stream);
-
-
     int bytesRemaining = fileSize - ftell(stream);
-
     while (bytesRemaining > 1)
     {
         fread(&val_u32, sizeof(val_u32), 1, stream);
-
         int32_t timeOfDay = (val_u32 >> 0) & 0x7FF;
         int32_t interval = (val_u32 >> 11) & 0x7FF;
         int32_t measurementCnt = (val_u32 >> 22) & 0x1F;
         int32_t deltaType = (val_u32 >> 27) & 0x3;
         int32_t precision = (val_u32 >> 29) & 0x7;
-
         cout << timeOfDay << " " << interval << " " << measurementCnt << " " << deltaType << " " << precision << "\n";
-
-        // MeasurementCh_t* pCh = &measurementSet.channel[ch_idx];
-
         bytesRemaining = fileSize - ftell(stream);
     }
 
