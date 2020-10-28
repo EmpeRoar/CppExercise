@@ -121,8 +121,20 @@ void Test()
 
 }
 
+
+void PointerTest()
+{
+    // int a = 5;
+    // point b = &a; -->get the address of variable...
+    // int c = *b;   --> get value at...
+    cout << "32 BIT: Pointers! \n";
+}
+
 int main()
 {
+
+    PointerTest();
+
     ReadFile();
     WriteToFile();
 
